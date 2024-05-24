@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"@sveltejs/adapter-static": "^3.0.1"
 	}
 }
