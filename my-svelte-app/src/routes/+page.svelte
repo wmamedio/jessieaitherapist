@@ -26,7 +26,7 @@
                     />
                 </a>
             </div>
-            <!-- <div class="flex lg:hidden">
+            <div class="flex lg:hidden">
                 <button
                 type="button"
                 class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -37,7 +37,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
-        </div> -->
+        </div>
         <!-- <div class="hidden lg:flex lg:gap-x-12">
             {#each navigation as item}
             <a key={item.name} href={item.href} class="text-sm font-semibold leading-6 text-gray-900">
@@ -46,7 +46,7 @@
             {/each}
         </div> -->
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/" class="text-sm font-semibold leading-6 text-gray-900">
+            <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="text-sm font-semibold leading-6 text-gray-900">
                 Log in <span aria-hidden="true">&rarr;</span>
             </a>
         </div>
@@ -76,7 +76,7 @@
         </div>
         <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
+                <!-- <div class="space-y-2 py-6">
                     {#each navigation as item}
                     <a
                     key={item.name}
@@ -86,10 +86,10 @@
                     {item.name}
                 </a>
                 {/each}
-            </div>
+            </div> -->
             <div class="py-6">
                 <a
-                href="/"
+                href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg"
                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                 Log in
