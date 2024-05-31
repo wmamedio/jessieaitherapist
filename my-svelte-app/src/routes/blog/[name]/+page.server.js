@@ -1,3 +1,5 @@
+export const prerender = true;
+
 export async function load({ params, fetch }) {
     const { name } = params;
     const response = await fetch('https://simplifying.bubbleapps.io/version-test/api/1.1/wf/posts');
