@@ -21,7 +21,7 @@
     </div>
     
     <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
-        <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
+        <!-- <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} /> -->
         <div class="p-6">
             <h2 class="text-xl font-semibold mb-2">{data.post.title_text}</h2>
             <p class="text-gray-700 mb-2"><strong>Author:</strong> {data.post.author_name_text}</p>

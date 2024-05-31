@@ -26,7 +26,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each data.posts as post}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
-            <img class="w-full h-48 object-cover" src={"https:" + post.image_image} alt={post.title_text} />
+            <!-- <img class="w-full h-48 object-cover" src={"https:" + post.image_image} alt={post.title_text} /> -->
             <div class="p-6">
                 <h2 class="text-xl font-semibold mb-2">{post.title_text}</h2>
                 <p class="text-gray-700 mb-2"><strong>Author:</strong> {post.author_name_text}</p>
