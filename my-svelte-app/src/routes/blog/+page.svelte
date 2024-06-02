@@ -1,5 +1,6 @@
 <script>
     export let data;
+    import { lazyLoad } from '$lib/lazyLoad.js';
 </script>
 
 <div class="p-8">
@@ -14,7 +15,7 @@
         {#each data.posts as post}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
             {#if post.image_image}
-                <img class="w-full h-48 object-cover" src={"https:" + post.image_image} alt={post.title_text} />
+                <img use:lazyLoad class="w-full h-48 object-cover" data-src={"https:" + post.image_image} alt={post.title_text} />
             {/if}
             <div class="p-6">
                 <a class="text-xl font-semibold mb-2" href={`/blog/${post.title_text.toLowerCase().replace(/\s+/g, '-')}`}>{post.title_text}</a>
