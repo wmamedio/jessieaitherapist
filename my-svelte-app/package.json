@@ -9,7 +9,7 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "deploy": "npm run build && wrangler pages deploy",
-    "postbuild": "npx svelte-sitemap --out-dir .svelte-kit/cloudflare  --domain https://jessietherapist.com"
+    "postbuild": "npx svelte-sitemap --out-dir .svelte-kit/cloudflare --domain https://jessietherapist.com"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
