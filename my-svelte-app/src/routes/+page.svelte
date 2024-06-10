@@ -18,7 +18,7 @@
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="/" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
+                    <span class="sr-only">Jessie Therapist AI</span>
                     <img
                     class="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -56,7 +56,7 @@
         <div class="fixed inset-0 z-50 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
+                    <span class="sr-only">Jessie Therapist AI</span>
                     <img
                     class="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -113,7 +113,7 @@
             </div>
         </div> -->
         <div class="text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm Jessie!<br/>Your AI Therapist online.</h1>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm Jessie!<br/>Your Online Therapist AI.</h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">I'm here to help you set meaningful goals and overcome your fears. Together, we'll define your dreams, set clear objectives, and build productive habits. Start your journey now by creating your account. Let's achieve your dreams together!</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
                 <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>

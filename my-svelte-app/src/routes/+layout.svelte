@@ -4,8 +4,8 @@
 
 
 <svelte:head>
-<meta name="description" content="Jessie AI Therapist - Helping you set meaningful goals and overcome your fears.">
-<title>Jessie AI Therapist - Online Therapy</title>
+<meta name="description" content="Jessie Therapist AI - Helping you set meaningful goals and overcome your fears.">
+<title>Jessie Therapist AI - Online Therapy</title>
 <link rel="icon" href="/favicon.ico">
 
 <!-- Google tag (gtag.js) -->
