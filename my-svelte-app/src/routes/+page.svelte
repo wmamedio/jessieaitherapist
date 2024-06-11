@@ -26,6 +26,11 @@
     
 </script>
 
+<svelte:head>
+    <meta name="description" content="Discover Jessie Therapist AI for virtual therapy and mental health support. Get confidential online counseling and personalized therapy sessions to boost your well-being. Start your journey today!">
+    <title>Jessie Therapist AI - Online Therapy</title>
+</svelte:head>
+
 <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">

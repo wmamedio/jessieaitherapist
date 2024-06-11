@@ -3,6 +3,12 @@
     import { lazyLoad } from '$lib/lazyLoad.js';
 </script>
 
+<svelte:head>
+<meta name="description" content={"Explore the Jessie Therapist AI blog for expert mental health advice, self-care tips, and the latest updates on AI therapy. Empower yourself with knowledge and improve your well-being today!"}>
+<title>Jessie Therapist Blog - Online Therapy AI</title>
+</svelte:head>
+
+
 <div class="p-8">
     <div class="mb-4">
         <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Go Back</a>

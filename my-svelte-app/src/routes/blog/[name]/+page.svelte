@@ -2,6 +2,11 @@
     export let data;
 </script>
 
+<svelte:head>
+<meta name="description" content={"Read " + data.post.title_text + " on the Jessie Therapist AI blog. Gain insights and practical advice on mental health, self-care, and therapy to enhance your well-being and personal growth."}>
+<title>{data.post.title_text} - Jessie Therapist Blog - Online Therapy AI</title>
+</svelte:head>
+
 <div class="p-8 flex justify-center">
     <div class="w-full max-w-2xl">
         <div class="mb-4">
@@ -10,7 +15,7 @@
         
         <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
             {#if data.post.image_image}
-                <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
+            <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
             {/if}
             <div class="p-6">
                 <div class="prose max-w-none mb-8">{@html data.post.content_text}</div>
