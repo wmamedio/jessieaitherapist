@@ -1,4 +1,5 @@
 <script>
+    import { onMount } from 'svelte';
     let mobileMenuOpen = false;
     
     const navigation = [
@@ -11,6 +12,18 @@
     function toggleMenu() {
         mobileMenuOpen = !mobileMenuOpen;
     }
+    
+    // Uses Stripe test link if url ?mode=test 
+    onMount(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('mode') === 'test') {
+            const links = document.getElementsByClassName('stripe-link');
+            for (let i = 0; i < links.length; i++) {
+                links[i].href = 'https://buy.stripe.com/test_14k3enekB3JLaZ25kk';
+            }
+        }
+    });
+    
 </script>
 
 <div class="bg-white">
@@ -20,7 +33,7 @@
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Jessie Therapist AI</span>
                     <img
-                    class="h-8 w-auto"
+                    class="stripe-link h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                     alt=""
                     />
@@ -39,14 +52,14 @@
             </button>
         </div>
         <!-- <div class="hidden lg:flex lg:gap-x-12">
-            {#each navigation as item}
-            <a key={item.name} href={item.href} class="text-sm font-semibold leading-6 text-gray-900">
-                {item.name}
-            </a>
-            {/each}
+        {#each navigation as item}
+        <a key={item.name} href={item.href} class="text-sm font-semibold leading-6 text-gray-900">
+        {item.name}
+        </a>
+        {/each}
         </div> -->
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="text-sm font-semibold leading-6 text-gray-900">
+            <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="stripe-link text-sm font-semibold leading-6 text-gray-900">
                 Log in <span aria-hidden="true">&rarr;</span>
             </a>
         </div>
@@ -77,26 +90,26 @@
         <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
                 <!-- <div class="space-y-2 py-6">
-                    {#each navigation as item}
-                    <a
-                    key={item.name}
-                    href={item.href}
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                    {item.name}
+                {#each navigation as item}
+                <a
+                key={item.name}
+                href={item.href}
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                {item.name}
                 </a>
                 {/each}
-            </div> -->
-            <div class="py-6">
-                <a
-                href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                Log in
-            </a>
+                </div> -->
+                <div class="py-6">
+                    <a
+                    href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg"
+                    class="stripe-link -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                    Log in
+                </a>
+            </div>
         </div>
     </div>
-</div>
 </div>
 </div>
 {/if}
@@ -108,15 +121,15 @@
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Join our waiting list. <a href="/" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-            </div>
+        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+        Join our waiting list. <a href="/" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+        </div>
         </div> -->
         <div class="text-center">
             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm Jessie!<br/>Your Online Therapist AI.</h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">I'm here to help you set meaningful goals and overcome your fears. Together, we'll define your dreams, set clear objectives, and build productive habits. Start your journey now by creating your account. Let's achieve your dreams together!</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+                <a href="https://buy.stripe.com/aEUbMB1vC5m73UA4gg" class="stripe-link rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
                 <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Learn more<span aria-hidden="true">→</span></a> 
             </div>
         </div>
