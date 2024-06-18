@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-<meta name="description" content={"Read " + data.post.title_text + " on the Jessie Therapist AI blog. Gain insights and practical advice on mental health, self-care, and therapy to enhance your well-being and personal growth."}>
-<title>{data.post.title_text} - Jessie Therapist Blog - Online Therapy AI</title>
+<meta name="description" content={"Read " + data.post.title_text + ". Gain insights on mental health, self-care, and therapy to enhance your well-being."}>
+<title>{data.post.title_text} - Jessie Online Therapy</title>
 </svelte:head>
 
 <div class="p-8 flex justify-center">

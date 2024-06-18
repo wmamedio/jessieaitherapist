@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-<meta name="description" content={"Explore the Jessie Therapist AI blog for expert mental health advice, self-care tips, and the latest updates on AI therapy. Empower yourself with knowledge and improve your well-being today!"}>
+<meta name="description" content={"Explore expert mental health advice, self-care tips, and the latest updates on therapy."}>
 <title>Jessie Therapist Blog - Online Therapy AI</title>
 </svelte:head>
 
