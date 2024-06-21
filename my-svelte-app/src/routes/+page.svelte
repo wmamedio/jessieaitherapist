@@ -102,7 +102,7 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="stripe-link text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
         {#if mobileMenuOpen}
@@ -123,7 +123,7 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="py-6">
-                            <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="stripe-link -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                            <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                 Log in
                             </a>
                         </div>
@@ -147,7 +147,7 @@
                 <p class="text-lg leading-8 text-gray-600">I'll support you between therapy sessions, helping you set goals, tackle challenges, and build healthy habits.</p>
                 <p class="text-lg leading-8 text-gray-600">Stay on track and make the most of your next appointment.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="stripe-link rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+                    <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
                     <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Learn more<span aria-hidden="true">→</span></a> 
                 </div>
             </div>
@@ -600,7 +600,7 @@
                     <li>Goal Setting and Tracking</li>
                 </ul>
                 <p class="mt-6">
-                    <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Sign Up Now
                     </a>              
                 </p>
@@ -621,7 +621,7 @@
                     <li>Additional Resources and Tools</li>
                 </ul>
                 <p class="mt-6">
-                    <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Sign Up Now
                     </a>              
                 </p>
@@ -717,7 +717,7 @@
             </ul>
         </div>
         <div class="mt-12">
-            <a href="https://buy.stripe.com/14keXA401fEwaGc5km" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gray-900 bg-white hover:bg-gray-100">
+            <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gray-900 bg-white hover:bg-gray-100">
                 Get Started Now
             </a>
         </div>
