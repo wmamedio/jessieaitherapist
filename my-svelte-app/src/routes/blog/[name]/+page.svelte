@@ -1,5 +1,6 @@
 <script>
     export let data;
+    import Footer from './Footer.svelte';
 </script>
 
 <svelte:head>
@@ -7,21 +8,29 @@
 <title>{data.post.title_text} - Jessie Online Therapy</title>
 </svelte:head>
 
-<div class="p-8 flex justify-center">
+<div class="p-8 pb-0 flex justify-center">
     <div class="w-full max-w-2xl">
-        <div class="mb-4">
-            <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Go Back</a>
+        <div>
+            <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">See All Posts</a>
         </div>
         
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
-            {#if data.post.image_image}
-            <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
-            {/if}
-            <div class="p-6">
-                <div class="prose max-w-none mb-8">{@html data.post.content_text}</div>
-                <p class="text-gray-700 mb-2"><strong>Author:</strong> {data.post.author_name_text}</p>
-                <p class="text-gray-700"><strong>Bio:</strong> {data.post.author_bio_text}</p>
+        <article class="prose lg:prose-xl mx-auto">
+            <div class="bg-white rounded-lg overflow-hidden post">
+                {#if data.post.image_image}
+                <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
+                {/if}
+                <div class="pt-6">
+                    <div class="prose max-w-none mb-8">{@html data.post.content_text}</div>
+                    {#if data.post.author_name_text}
+                    <p class="text-gray-700 text-base"><strong>Author:</strong> {data.post.author_name_text}</p>
+                    {/if}
+                    {#if data.post.author_bio_text}
+                    <p class="text-gray-700 text-base"><strong>Bio:</strong> {data.post.author_bio_text}</p>
+                    {/if}
+                </div>
             </div>
-        </div>
+        </article>
     </div>
 </div>
+
+<Footer />  
