@@ -9,10 +9,6 @@
 </svelte:head>
 
 <div class="p-8">
-    <div class="mb-4">
-        <a href="/" class="text-sm font-semibold leading-6 text-gray-900">&lt; Home</a>
-    </div>
-    
 
     {#if data.posts.length === 0}
     <p>No posts available.</p>

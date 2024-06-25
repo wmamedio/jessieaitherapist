@@ -11,7 +11,7 @@
 <div class="p-8 pb-0 flex justify-center">
     <div class="w-full max-w-2xl">
         <div>
-            <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">See All Posts</a>
+            <a href="/blog" class="text-gray-900 text-sm font-medium">&lt; See All Posts</a>
         </div>
         
         <article class="prose lg:prose-xl mx-auto">
