@@ -17,7 +17,7 @@
         <article class="prose lg:prose-xl mx-auto">
             <div class="bg-white rounded-lg overflow-hidden post">
                 {#if data.post.image_image}
-                <img class="w-full h-48 object-cover" src={"https:" + data.post.image_image} alt={data.post.title_text} />
+                <img class="w-full h-96 object-cover object-top rounded-2xl" src={"https:" + data.post.image_image} alt={data.post.title_text} />
                 {/if}
                 <div class="pt-6">
                     <div class="prose max-w-none mb-8">{@html data.post.content_text}</div>

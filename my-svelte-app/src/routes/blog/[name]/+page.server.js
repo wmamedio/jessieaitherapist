@@ -2,11 +2,11 @@ export const prerender = true;
 
 export async function load({ params, fetch }) {
     const { name } = params;
-    const response = await fetch('https://simplifying.bubbleapps.io/version-test/api/1.1/wf/posts');
+    const response = await fetch('https://simplifying.bubbleapps.io/version-test/api/1.1/obj/jtblogpost');
     const data = await response.json();
     
-    if (data.status === 'success') {
-        const post = data.response.post.find(post => post.title_text.toLowerCase().replace(/\s+/g, '-') === name);
+    if (data.response.results.length > 0) {
+        const post = data.response.results.find(post => post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-') === name);
         if (post) {
             return { post };
         } else {
