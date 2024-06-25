@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+	import BlogPosts from './BlogPosts.svelte';
     
     let mobileMenuOpen = false;
     let annualPricing = true;
@@ -7,41 +8,39 @@
     let loading = true;
     let error = null;
     
-    const apiUrl = 'https://simplifying.bubbleapps.io/version-test/api/1.1/wf/posts';
-    
     const navigation = [
-        { name: 'Product', href: '/' },
-        { name: 'Features', href: '/' },
-        { name: 'Marketplace', href: '/' },
-        { name: 'Company', href: '/' },
+    { name: 'Product', href: '/' },
+    { name: 'Features', href: '/' },
+    { name: 'Marketplace', href: '/' },
+    { name: 'Company', href: '/' },
     ];
     
     let faqs = [
-        {
-            question: "How does Jessie Therapist AI work?",
-            answer: "Jessie Therapist AI uses advanced AI technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
-            open: false
-        },
-        {
-            question: "Is my data safe with Jessie Therapist AI?",
-            answer: "Yes, your data is completely safe. We use state-of-the-art encryption and security measures to ensure your privacy and confidentiality.",
-            open: false
-        },
-        {
-            question: "Can I cancel my subscription at any time?",
-            answer: "Absolutely. You can cancel your subscription at any time with no penalties. Simply go to your account settings and follow the cancellation instructions.",
-            open: false
-        },
-        {
-            question: "What if I'm not satisfied with the service?",
-            answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie Therapist AI within the first 30 days, we will provide a full refund.",
-            open: false
-        },
-        {
-            question: "How do I get started with Jessie Therapist AI?",
-            answer: "Getting started is easy. Sign up, create your profile, and begin your first session. Jessie will guide you through the process and help you set up your personalized therapy plan.",
-            open: false
-        }
+    {
+        question: "How does Jessie Therapist AI work?",
+        answer: "Jessie Therapist AI uses advanced AI technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
+        open: false
+    },
+    {
+        question: "Is my data safe with Jessie Therapist AI?",
+        answer: "Yes, your data is completely safe. We use state-of-the-art encryption and security measures to ensure your privacy and confidentiality.",
+        open: false
+    },
+    {
+        question: "Can I cancel my subscription at any time?",
+        answer: "Absolutely. You can cancel your subscription at any time with no penalties. Simply go to your account settings and follow the cancellation instructions.",
+        open: false
+    },
+    {
+        question: "What if I'm not satisfied with the service?",
+        answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie Therapist AI within the first 30 days, we will provide a full refund.",
+        open: false
+    },
+    {
+        question: "How do I get started with Jessie Therapist AI?",
+        answer: "Getting started is easy. Sign up, create your profile, and begin your first session. Jessie will guide you through the process and help you set up your personalized therapy plan.",
+        open: false
+    }
     ];
     
     function toggleMenu() {
@@ -58,22 +57,7 @@
             return faq;
         });
     }
-    
-    onMount(async () => {
-        try {
-            const response = await fetch(apiUrl);
-            if (!response.ok) {
-                throw new Error('Failed to fetch posts');
-            }
-            const result = await response.json();
-            postsData.posts = result.response.post.slice(0, 3); // Update based on the response structure
-        } catch (err) {
-            error = err.message;
-        } finally {
-            loading = false;
-        }
-    });
-</script>
+    </script>
 
 
 <svelte:head>
@@ -528,37 +512,8 @@
 
 
 <!-- Section 7: Explore Our Latest Blog Posts -->
-<section class="bg-white py-24 sm:py-32">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:text-center">
-            <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                Explore Our Latest Blog Posts
-            </h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">
-                Stay informed and empowered with our latest articles on mental health, therapy, and self-improvement. Our blog provides valuable insights, tips, and resources to help you on your journey to better mental health.
-            </p>
-        </div>
-        <div class="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
-            {#if loading}
-                <p class="text-gray-600">Loading posts...</p>
-            {:else if error}
-                <p class="text-red-600">{error}</p>
-            {:else if postsData.posts && postsData.posts.length > 0}
-                {#each postsData.posts as post}
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                        {#if post.image_image}
-                            <img src={post.image_image} alt={post.title_text} class="w-full h-40 object-cover mb-4 rounded-lg">
-                        {/if}
-                        <h3 class="text-lg font-medium text-gray-900">{post.title_text}</h3>
-                        <p class="mt-4 text-indigo-600"><a href={"/blog/" + post.title_text.toLowerCase().replace(/ /g, '-')}>Read More</a></p>
-                    </div>
-                {/each}
-            {:else}
-                <p class="text-gray-600">No posts available</p>
-            {/if}
-        </div>
-    </div>
-</section>
+
+<BlogPosts/>
 
 
 
