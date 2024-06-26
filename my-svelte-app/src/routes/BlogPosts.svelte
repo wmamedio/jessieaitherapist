@@ -39,11 +39,6 @@
     });
 </script>
 
-<style>
-    /* Add your styles here */
-</style>
-
-<!-- Section 7: Explore Our Latest Blog Posts -->
 <section id="latest-blog-posts" class="bg-white py-24 sm:py-32">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
