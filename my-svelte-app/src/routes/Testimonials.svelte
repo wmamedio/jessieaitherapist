@@ -1,11 +1,12 @@
 <section class="bg-white py-24 sm:py-32">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:text-center">
+    <div class="max-w-6xl mx-auto px-16">
+        <div>
             <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 What Our Users Say
             </h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Stories of Transformation and Support</p>
         </div>
-        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 sm:mt-20 lg:mt-24 lg:max-w-4xl lg:grid-cols-3">
+        <div class="mx-auto mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:gap-16 sm:mt-20 lg:mt-24 lg:grid-cols-2">
             <!-- Testimonial 1 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
@@ -79,7 +80,7 @@
             </div>
         </div>
         <p class="mt-16 text-center text-sm text-gray-500">
-            Note: To maintain confidentiality and protect our users' privacy, we have changed the names and photos in these testimonials.
+            Note: Names and photos in these testimonials have been changed for privacy.
         </p>      
     </div>
 </section>

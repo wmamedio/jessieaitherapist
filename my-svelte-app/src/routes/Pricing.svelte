@@ -1,13 +1,17 @@
+<script>
+        let annualPricing = true;
+</script>
+
 <section class="bg-gray-900 py-24 sm:py-32">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
+    <div class="max-w-6xl mx-auto px-16">
+        <div class="text-left">
             <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
                 Pricing plans for all needs
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-400">
                 Find the perfect plan that suits your needs and budget. Our pricing is simple and transparent, offering you the best value for comprehensive mental health support. Start your journey with Jessie Therapist AI today and enjoy a special offer on our plans.
             </p>
-            <div class="mt-6 flex justify-center">
+            <div class="mt-12 flex justify-center">
                 <div class="relative inline-flex self-center">
                     <button class="relative z-10 inline-flex items-center px-4 py-2 text-sm font-medium text-indigo-700 bg-white border border-gray-300 rounded-l-md hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500" on:click={() => annualPricing = false}>
                         Monthly

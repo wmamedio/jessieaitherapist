@@ -1,11 +1,11 @@
 <section class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-        <div class="max-w-lg mx-auto lg:max-w-3xl">
+    <div class="mx-auto max-w-6xl px-16">
+        <div class="mx-auto">
             <h2 class="text-3xl font-bold text-white sm:text-4xl">Take the First Step Towards Better Mental Health</h2>
-            <p class="mt-4 text-lg leading-8 text-gray-300">Join Jessie Therapist AI today and start your journey to a healthier, happier you. Sign up now and take advantage of our limited-time offer.</p>
+            <p class="mt-4 text-lg leading-8 text-gray-300">Join Jessie Therapist AI today and start your journey to a healthier, happier you. <br/>Sign up now and take advantage of our limited-time offer.</p>
         </div>
         <div class="mt-12">
-            <ul class="text-left mx-auto max-w-lg text-gray-300 space-y-6">
+            <ul class="text-left mx-auto text-gray-300 space-y-6">
                 <li class="flex items-start">
                     <svg class="flex-shrink-0 h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414-1.414L7 12.586 4.707 10.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l9-9z" clip-rule="evenodd"/>
@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </div>
-        <div class="mt-12">
+        <div class="mt-16">
             <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gray-900 bg-white hover:bg-gray-100">
                 Get Started Now
             </a>

@@ -1,12 +1,12 @@
 <script>
     let faqs = [
     {
-        question: "How does Jessie Therapist AI work?",
-        answer: "Jessie Therapist AI uses advanced AI technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
+        question: "How does Jessie work?",
+        answer: "Jessie uses advanced AI technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
         open: false
     },
     {
-        question: "Is my data safe with Jessie Therapist AI?",
+        question: "Is my data safe?",
         answer: "Yes, your data is completely safe. We use state-of-the-art encryption and security measures to ensure your privacy and confidentiality.",
         open: false
     },
@@ -17,12 +17,17 @@
     },
     {
         question: "What if I'm not satisfied with the service?",
-        answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie Therapist AI within the first 30 days, we will provide a full refund.",
+        answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie AI within the first 30 days, we will provide a full refund.",
         open: false
     },
     {
-        question: "How do I get started with Jessie Therapist AI?",
+        question: "How do I get started?",
         answer: "Getting started is easy. Sign up, create your profile, and begin your first session. Jessie will guide you through the process and help you set up your personalized therapy plan.",
+        open: false
+    },
+    {
+        question: "What types of issues can Jessie help with?",
+        answer: "Jessie can help with a variety of mental health issues including stress, anxiety, depression, relationship problems, and more. It offers tailored strategies to address your specific needs.",
         open: false
     }
     ];
@@ -40,8 +45,8 @@
 </script>
 
 <section class="bg-white py-24 sm:py-32">
-    <div class="max-w-3xl mx-auto px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center">
+    <div class="max-w-6xl mx-auto px-16">
+        <div class="mx-auto">
             <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
                 Frequently Asked Questions
             </h2>
@@ -49,7 +54,7 @@
                 We've compiled a list of frequently asked questions to help you understand more about Jessie Therapist AI and how it can support your mental health journey. If you have any other questions, feel free to contact us.
             </p>
         </div>
-        <div class="mt-16 space-y-8">
+        <div class="mt-16 gap-12 grid lg:grid-cols-2">
             {#each faqs as faq, index}
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <button type="button" class="w-full text-left flex justify-between items-center" on:click={() => toggle(index)} aria-expanded={faq.open}>
