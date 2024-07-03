@@ -1,4 +1,4 @@
-<section class="bg-gray-800 py-20 sm:py-32">
+<section id="jessie" class="bg-gray-800 py-20 sm:py-32">
     <div class="max-w-6xl mx-auto px-16">
         <div class="max-w-3xl lg:text-left">
             <h2 class="text-base font-semibold leading-7 text-indigo-300">Welcome to Jessie AI Therapy Assistant</h2>
@@ -43,3 +43,4 @@
         </div>
     </div>
 </section>
+

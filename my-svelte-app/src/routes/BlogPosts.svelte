@@ -69,5 +69,8 @@
             <p class="text-gray-600">No posts available</p>
             {/if}
         </div>
+        <div class="mt-12 text-right">
+            <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900" style="scroll-behavior: smooth;">See More Posts<span aria-hidden="true">→</span></a>
+        </div>
     </div>
 </section>
