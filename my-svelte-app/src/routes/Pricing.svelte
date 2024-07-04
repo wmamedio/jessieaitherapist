@@ -38,7 +38,7 @@
                     <li>Goal Setting and Tracking</li>
                 </ul>
                 <p class="mt-6">
-                    <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <a href="https://buy.stripe.com/fZecNOcbwfFLfD2fYY" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Sign Up Now
                     </a>              
                 </p>
@@ -59,7 +59,7 @@
                     <li>Additional Resources and Tools</li>
                 </ul>
                 <p class="mt-6">
-                    <a href="https://buy.stripe.com/9AQ16KfIJ9g89C84gj" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <a href="https://buy.stripe.com/fZecNOcbwfFLfD2fYY" class="stripe-link inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Sign Up Now
                     </a>              
                 </p>
