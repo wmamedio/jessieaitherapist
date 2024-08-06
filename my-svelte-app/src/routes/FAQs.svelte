@@ -2,7 +2,7 @@
     let faqs = [
     {
         question: "How does Jessie work?",
-        answer: "Jessie uses advanced AI technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
+        answer: "Jessie uses advanced technology to provide personalized therapy sessions. It helps you set goals, track progress, and offers techniques and strategies to manage your mental health effectively.",
         open: false
     },
     {
@@ -17,7 +17,7 @@
     },
     {
         question: "What if I'm not satisfied with the service?",
-        answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie AI within the first 30 days, we will provide a full refund.",
+        answer: "We offer a 30-day money-back guarantee. If you're not satisfied with Jessie within the first 30 days, we will provide a full refund.",
         open: false
     },
     {
@@ -51,7 +51,7 @@
                 Frequently Asked Questions
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">
-                We've compiled a list of frequently asked questions to help you understand more about Jessie Therapist AI and how it can support your mental health journey. If you have any other questions, feel free to contact us.
+                We've compiled a list of frequently asked questions to help you understand more about Jessie Therapist and how it can support your mental health journey. If you have any other questions, feel free to contact us.
             </p>
         </div>
         <div class="mt-16 gap-12 grid lg:grid-cols-2">

@@ -2,10 +2,10 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="mx-auto max-w-3xl lg:text-center">
             <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                How Jessie Therapist AI Works
+                How Online Therapy Works
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-300">
-                Discover how easy it is to start your mental health journey with an online therapy assistant.
+                Discover how easy it is to start your mental health journey with an online therapist.
             </p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">

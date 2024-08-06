@@ -15,8 +15,8 @@
 </script>
 
 <svelte:head>
-<meta name="description" content="Discover Jessie Therapist AI for virtual therapy and mental health support. Get confidential online counseling and personalized therapy sessions to boost your well-being. Start your journey today!">
-<title>Jessie - AI Online Therapy Assistant</title>
+<meta name="description" content="Discover Jessie Therapist for virtual therapy and mental health support. Get confidential online counseling and personalized therapy sessions to boost your well-being. Start your journey today!">
+<title>Jessie - Online Therapy</title>
 </svelte:head>
 
 

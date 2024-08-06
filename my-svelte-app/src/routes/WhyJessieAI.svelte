@@ -1,9 +1,9 @@
 <section id="jessie" class="bg-gray-800 py-20 sm:py-32">
     <div class="max-w-6xl mx-auto px-16">
         <div class="max-w-3xl lg:text-left">
-            <h2 class="text-base font-semibold leading-7 text-indigo-300">Welcome to Jessie AI Therapy Assistant</h2>
+            <h2 class="text-base font-semibold leading-7 text-indigo-300">Welcome to Jessie Online Therapy</h2>
             <p class="mt-2 text-3xl font-bold text-white sm:text-4xl">Why Choose Jessie?</p>
-            <p class="mt-6 text-lg leading-8 text-gray-200">Are you struggling with stress, anxiety, or just need someone to talk to? Jessie Therapist AI is here to support you. As your personal online therapist, Jessie is designed to help you navigate life's challenges and achieve your mental health goals. With Jessie, you have access to a supportive and understanding companion who is available anytime, anywhere.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-200">Are you struggling with stress, anxiety, or just need someone to talk to? Jessie Therapist is here to support you. As your personal online therapist, Jessie is designed to help you navigate life's challenges and achieve your mental health goals. With Jessie, you have access to a supportive and understanding companion who is available anytime, anywhere.</p>
         </div>
         <div class="mx-auto mt-16 sm:mt-20 lg:mt-24">
             <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-16">

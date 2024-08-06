@@ -37,7 +37,7 @@
                         24/7 Accessibility
                     </dt>
                     <dd class="mt-2 text-base leading-7 text-gray-600">
-                        Access Jessie Therapist AI anytime, anywhere. Get the support you need when it fits your schedule. Enjoy the flexibility of having a virtual therapist available around the clock, no matter where you are.
+                        Access Jessie Therapist anytime, anywhere. Get the support you need when it fits your schedule. Enjoy the flexibility of having a virtual therapist available around the clock, no matter where you are.
                     </dd>
                 </div>
             </dl>

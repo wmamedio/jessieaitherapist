@@ -16,7 +16,7 @@
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-600">"Jessie Therapist AI has been a game-changer for my mental health. The personalized sessions and goal tracking have helped me immensely. I feel more in control of my life and my emotions."</p>
+                <p class="mt-4 text-gray-600">"Jessie Therapist has been a game-changer for my mental health. The personalized sessions and goal tracking have helped me immensely. I feel more in control of my life and my emotions."</p>
             </div>
             
             <!-- Testimonial 2 -->
@@ -40,7 +40,7 @@
                         <p class="text-yellow-400">★★★★☆</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-600">"Jessie Therapist AI offers a unique and effective approach to therapy. The sessions are interactive and engaging, and I've seen a significant improvement in my anxiety levels."</p>
+                <p class="mt-4 text-gray-600">"Jessie Therapist offers a unique and effective approach to therapy. The sessions are interactive and engaging, and I've seen a significant improvement in my anxiety levels."</p>
             </div>
             
             <!-- Testimonial 4 -->
@@ -64,7 +64,7 @@
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-600">"Using Jessie Therapist AI has been an amazing experience. The sessions are always available when I need them, and I’ve made significant progress in managing my stress and anxiety."</p>
+                <p class="mt-4 text-gray-600">"Using Jessie Therapist has been an amazing experience. The sessions are always available when I need them, and I’ve made significant progress in managing my stress and anxiety."</p>
             </div>
             
             <!-- Testimonial 6 -->
@@ -76,7 +76,7 @@
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-600">"Jessie Therapist AI has provided me with the support and guidance I needed during a tough time. The interactive sessions are engaging, and I always feel better after using it."</p>
+                <p class="mt-4 text-gray-600">"Jessie Therapist has provided me with the support and guidance I needed during a tough time. The interactive sessions are engaging, and I always feel better after using it."</p>
             </div>
         </div>
         <p class="mt-16 text-center text-sm text-gray-500">

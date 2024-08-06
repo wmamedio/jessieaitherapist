@@ -2,7 +2,7 @@
     <div class="relative isolate px-16 pt-14 md:h-screen content-center center">
         <div class="mx-auto py-12 flex flex-col md:flex-row items-center gap-8">
             <div class="text-left flex-2">
-                <h1 class="font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl leading-4" style="line-height: 1.16;">I'm Jessie! <br/>Your Online Therapy Assistant.</h1>
+                <h1 class="font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl leading-4" style="line-height: 1.16;">I'm Jessie! <br/>Your Online Therapist.</h1>
                 <p class="text-lg text-gray-600 mt-4">Whether you're lonely, overwhelmed, or just want to talk,
                 <span class="text-lg text-gray-600 font-semibold">I'm here for you.</span></p>
                 <div class="mt-10 flex items-center gap-x-6">

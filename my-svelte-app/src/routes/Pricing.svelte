@@ -9,7 +9,7 @@
                 Pricing plans for all needs
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-400">
-                Find the perfect plan that suits your needs and budget. Our pricing is simple and transparent, offering you the best value for comprehensive mental health support. Start your journey with Jessie Therapist AI today and enjoy a special offer on our plans.
+                Find the perfect plan that suits your needs and budget. Our pricing is simple and transparent, offering you the best value for comprehensive mental health support. Start your journey with Jessie Therapist today and enjoy a special offer on our plans.
             </p>
             <div class="mt-12 flex justify-center">
                 <div class="relative inline-flex self-center">
@@ -84,7 +84,7 @@
         </div>
         
         <div class="mt-10 text-center">
-            <p class="text-gray-400">Try Jessie Therapist AI risk-free. If you're not satisfied within the first 30 days, we offer a full money-back guarantee.</p>
+            <p class="text-gray-400">Try Jessie Therapist risk-free. If you're not satisfied within the first 30 days, we offer a full money-back guarantee.</p>
         </div>
     </div>
 </section>

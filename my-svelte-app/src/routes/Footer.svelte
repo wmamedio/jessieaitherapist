@@ -22,7 +22,7 @@
             <!-- Placeholder for additional content (empty columns to match layout) -->
         </div>
         <div class="mt-12 border-t border-gray-700 pt-8 text-center">
-            <p class="text-sm text-gray-400">&copy; 2024 Jessie Therapist AI. All rights reserved.</p>
+            <p class="text-sm text-gray-400">&copy; 2024 Jessie Therapist. All rights reserved.</p>
         </div>
     </div>
 </section>

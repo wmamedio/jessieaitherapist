@@ -19,7 +19,7 @@
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
-                <span class="sr-only">Jessie AI Therapy Assistant</span>
+                <span class="sr-only">Jessie Therapy Assistant</span>
                 <img class="stripe-link h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
             </a>
         </div>
@@ -40,7 +40,7 @@
         <div class="fixed inset-0 z-50 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Jessie AI Therapy Assistant</span>
+                    <span class="sr-only">Jessie Online Therapy</span>
                     <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
                 </a>
                 <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" on:click={toggleMenu}>

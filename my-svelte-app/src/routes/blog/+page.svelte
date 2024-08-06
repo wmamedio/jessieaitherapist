@@ -5,7 +5,7 @@
 
 <svelte:head>
     <meta name="description" content="Explore expert mental health advice, self-care tips, and the latest updates on therapy.">
-    <title>Jessie Therapist Blog - Online Therapy AI</title>
+    <title>Jessie Therapist Blog - Online Therapy</title>
 </svelte:head>
 
 <div class="p-8">

@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-6xl px-16">
         <div class="mx-auto">
             <h2 class="text-3xl font-bold text-white sm:text-4xl">Take the First Step Towards Better Mental Health</h2>
-            <p class="mt-4 text-lg leading-8 text-gray-300">Join Jessie Therapist AI today and start your journey to a healthier, happier you. <br/>Sign up now and take advantage of our limited-time offer.</p>
+            <p class="mt-4 text-lg leading-8 text-gray-300">Join Jessie Therapist today and start your journey to a healthier, happier you. <br/>Sign up now and take advantage of our limited-time offer.</p>
         </div>
         <div class="mt-12">
             <ul class="text-left mx-auto text-gray-300 space-y-6">
