@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-base font-semibold leading-7 text-indigo-600">Explore the Powerful Features</h2>
-            <p class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">Jessie Therapist AI</p>
+            <p class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">Jessie Therapist</p>
             <p class="mt-6 text-lg leading-8 text-gray-600">Discover a range of features designed to provide personalized, secure, and accessible therapy sessions.</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">

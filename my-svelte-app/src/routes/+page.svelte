@@ -9,7 +9,7 @@
     import Hero from './Hero.svelte';
     import Pricing from './Pricing.svelte';
     import Testimonials from './Testimonials.svelte';
-    import TherapyAssistant from './WhyJessieAI.svelte';
+    import TherapyAssistant from './WhyJessie.svelte';
     // import Features from './Features.svelte';
     // import HowItWorks from './HowItWorks.svelte';
 </script>

@@ -8,7 +8,7 @@
             <dl class="grid max-w-xl grid-cols-1 gap-x-12 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                 <!-- Company History -->
                 <div class="relative">
-                    <dd class="mt-2 text-base leading-7 text-gray-600">Jessie Therapist was founded with the vision of making high-quality mental health support accessible to everyone. Our team of experts has worked tirelessly to develop a platform that combines advanced AI technology with proven therapeutic techniques.</dd>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Jessie Therapist was founded with the vision of making high-quality mental health support accessible to everyone. Our team of experts has worked tirelessly to develop a platform with proven therapeutic techniques.</dd>
                 </div>
                 
                 <!-- Mission Statement -->
