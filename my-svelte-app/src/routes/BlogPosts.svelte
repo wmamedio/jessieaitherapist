@@ -1,42 +1,7 @@
 <script>
-    import { onMount } from 'svelte';
-
-    const apiUrl = 'https://simplifying.bubbleapps.io/version-test/api/1.1/obj/jtblogpost';
-    let postsData = { posts: [] };
-    let loading = true;
-    let error = null;
-
-    async function loadPosts() {
-        try {
-            const response = await fetch(apiUrl);
-            if (!response.ok) {
-                throw new Error('Failed to fetch posts');
-            }
-            const result = await response.json();
-            postsData.posts = result.response.results.slice(0, 9); // Update based on the response structure
-        } catch (err) {
-            error = err.message;
-        } finally {
-            loading = false;
-        }
-    }
-
-    onMount(() => {
-        const section = document.getElementById('latest-blog-posts');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    loadPosts();
-                    observer.unobserve(section);
-                }
-            });
-        }, {
-            rootMargin: '0px 0px 600px 0px' // Adjust this margin as needed
-        });
-
-        observer.observe(section);
-    });
+    export let loading;
+    export let error;
+    export let postsData = { posts: [] }; // Ensure default value
 </script>
 
 <section id="latest-blog-posts" class="bg-white py-24 sm:py-32">
@@ -59,7 +24,7 @@
             <a class="text-xl font-semibold mb-2" href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`}>
                 <div class="group/card">
                     {#if post.image_image}
-                    <img src={post.image_image} alt={post.title_text} class="w-full h-48 object-cover mb-4 rounded-lg shadow-sm shadow-gray-100  group-hover/card:shadow-gray-300">
+                    <img loading="lazy" src={post.image_image} alt={post.title_text} class="w-full h-48 object-cover mb-4 rounded-lg shadow-sm shadow-gray-100  group-hover/card:shadow-gray-300">
                     {/if}
                     <h3 class="text-lg font-medium text-gray-600 group-hover/card:text-gray-900">{post.title_text}</h3>
                 </div>

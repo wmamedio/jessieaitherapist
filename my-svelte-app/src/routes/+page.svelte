@@ -10,24 +10,23 @@
     import Pricing from './Pricing.svelte';
     import Testimonials from './Testimonials.svelte';
     import TherapyAssistant from './WhyJessie.svelte';
-    // import Features from './Features.svelte';
-    // import HowItWorks from './HowItWorks.svelte';
+
+    export let data;
+    let { postsData, error } = data;
+    let loading = !postsData.posts.length && !error;
 </script>
 
 <svelte:head>
-<meta name="description" content="Discover Jessie Therapist for virtual therapy and mental health support. Get confidential online counseling and personalized therapy sessions to boost your well-being. Start your journey today!">
-<title>Jessie - Online Therapy</title>
+    <meta name="description" content="Discover Jessie Therapist for virtual therapy and mental health support. Get confidential online counseling and personalized therapy sessions to boost your well-being. Start your journey today!">
+    <title>Jessie - Online Therapy</title>
 </svelte:head>
-
 
 <Header/>
 <Hero/>
 <TherapyAssistant/>
-<!-- <Features/> -->
-<!-- <HowItWorks/> -->
 <Testimonials/>
 <CBT/>
-<BlogPosts/>
+<BlogPosts {loading} {error} {postsData}/>
 <Pricing/>
 <AboutUs/>
 <CTA/>
