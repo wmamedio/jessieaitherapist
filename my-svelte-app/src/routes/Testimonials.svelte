@@ -10,9 +10,9 @@
             <!-- Testimonial 1 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Martinez">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/32.jpg" alt="Alex Martinez">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">Alex Martinez</p>
+                        <p class="text-lg font-medium text-gray-900">A. Martinez</p>
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
@@ -22,9 +22,9 @@
             <!-- Testimonial 2 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Thompson">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/44.jpg" alt="Sarah Thompson">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">Sarah Thompson</p>
+                        <p class="text-lg font-medium text-gray-900">S. Thompson</p>
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
             <!-- Testimonial 3 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Lee">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/65.jpg" alt="David Lee">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">David Lee</p>
+                        <p class="text-lg font-medium text-gray-900">D. Lee</p>
                         <p class="text-yellow-400">★★★★☆</p>
                     </div>
                 </div>
@@ -46,9 +46,9 @@
             <!-- Testimonial 4 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Richards">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/68.jpg" alt="Emily Richards">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">Emily Richards</p>
+                        <p class="text-lg font-medium text-gray-900">E. Richards</p>
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
@@ -58,9 +58,9 @@
             <!-- Testimonial 5 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Johnson">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/75.jpg" alt="Michael Johnson">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">Michael Johnson</p>
+                        <p class="text-lg font-medium text-gray-900">M. Johnson</p>
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
@@ -70,18 +70,14 @@
             <!-- Testimonial 6 -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md">
                 <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/85.jpg" alt="Olivia Brown">
+                    <img class="h-12 w-12 rounded-full" src="./testimonials/85.jpg" alt="Olivia Brown">
                     <div class="ml-4">
-                        <p class="text-lg font-medium text-gray-900">Olivia Brown</p>
+                        <p class="text-lg font-medium text-gray-900">O. Brown</p>
                         <p class="text-yellow-400">★★★★★</p>
                     </div>
                 </div>
                 <p class="mt-4 text-gray-600">"Jessie Therapist has provided me with the support and guidance I needed during a tough time. The interactive sessions are engaging, and I always feel better after using it."</p>
             </div>
         </div>
-        <p class="mt-16 text-center text-sm text-gray-500">
-            Note: Names and photos in these testimonials have been changed for privacy.
-        </p>      
     </div>
 </section>
-

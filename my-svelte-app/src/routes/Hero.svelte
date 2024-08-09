@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="flex-1 w-full">
-                <img src="/chat_mockup.webp" alt="Chat Mockup" class="w-full h-auto">
+                <img src="/chat_mockup.webp" alt="Chat Mockup" class="w-full h-auto" width="360" height="240">
             </div>
         </div>
         <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
