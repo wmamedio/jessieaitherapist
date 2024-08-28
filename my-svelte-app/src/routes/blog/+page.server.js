@@ -10,6 +10,7 @@ export async function load() {
     if (allPosts && allPosts.length > 0) {
         return { posts: allPosts };
     } else {
-        throw new Error('Failed to fetch posts or no posts available');
+        console.error('No posts available');
+        return { posts: [] };
     }
 }

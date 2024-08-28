@@ -1,23 +1,34 @@
 export function lazyLoad(node) {
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const image = entry.target;
-                const src = image.getAttribute('data-src');
-                if (src) {
-                    image.src = src;
-                    image.classList.remove('lazy');
+    let observer;
+
+    function setupObserver() {
+        if (observer) observer.disconnect();
+
+        observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const image = entry.target;
+                    const src = image.getAttribute('data-src');
+                    if (src) {
+                        image.src = src;
+                        image.classList.remove('lazy');
+                    }
+                    observer.unobserve(image);
                 }
-                observer.unobserve(image);
-            }
+            });
         });
-    });
-    
-    observer.observe(node);
-    
+        
+        observer.observe(node);
+    }
+
+    setupObserver();
+
     return {
+        update() {
+            setupObserver();
+        },
         destroy() {
-            observer.unobserve(node);
+            if (observer) observer.disconnect();
         }
     };
 }

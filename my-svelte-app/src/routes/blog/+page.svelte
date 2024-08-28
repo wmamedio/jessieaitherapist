@@ -8,29 +8,47 @@
     <title>Jessie Therapist Blog - Online Therapy</title>
 </svelte:head>
 
-<div class="p-8">
-
-    {#if data.posts.length === 0}
-    <p>No posts available.</p>
-    {:else}
-    <h1 class="text-3xl font-bold text-gray-800 mb-6">Blog Posts ({data.posts.length})</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {#each data.posts as post}
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden post">
-            {#if post.image_image}
-            <img use:lazyLoad class="w-full h-48 object-cover lazy" data-src={"https:" + post.image_image} alt={post.title_text} />
-            {/if}
-            <div class="p-6">
-                <a href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`}>
-                    <h2 class="text-xl font-semibold mb-2">{post.title_text}</h2>
-                </a>
-                <!-- <p class="text-gray-700 mb-2"><strong>Author:</strong> {post.author_name_text}</p>
-                    <p class="text-gray-500 mb-4"><strong>Bio:</strong> {post.author_bio_text}</p> -->
-            </div>
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Learn more about mental health, therapy, and self-care.</p>
         </div>
-        {/each}
+        {#if data.posts.length === 0}
+        <p class="mt-16 text-center text-gray-500 text-xl">No posts available.</p>
+        {:else}
+        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {#each data.posts as post}
+            <a href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`} class="group">
+                <article class="flex flex-col items-start h-full">
+                    <div class="relative w-full">
+                        {#if post.image_image}
+                        <img use:lazyLoad 
+                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lazy" 
+                             data-src={"https:" + post.image_image} 
+                             alt={post.title_text} />
+                        {/if}
+                    </div>
+                    <div class="max-w-xl flex-grow">
+                        <div class="relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                {post.title_text}
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                {#if post.content_text}
+                                    {@html post.content_text.replace(/<[^>]*>/g, '').slice(0, 150)}...
+                                {:else}
+                                    No content available
+                                {/if}
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            {/each}
+        </div>
+        {/if}
     </div>
-    {/if}
 </div>
 
 <style>
