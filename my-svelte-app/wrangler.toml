@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "jessietherapist"
+name = "jessieaitherapist"
 compatibility_date = "2024-05-12"
 pages_build_output_dir = ".svelte-kit/cloudflare"
 
