@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="flex-1 flex justify-center items-center h-full mt-8 lg:mt-0">
-                <img src="/chat_mockup.png" alt="Chat Mockup" class="h-full w-auto">
+                <img src="/chat_mockup.webp" alt="Chat Mockup" class="h-full w-auto">
             </div>
         </div>
     </div>
