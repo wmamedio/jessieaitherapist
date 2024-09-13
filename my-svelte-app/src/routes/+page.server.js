@@ -21,5 +21,3 @@ export const load = async ({ fetch }) => {
         error
     };
 };
-
-// testing

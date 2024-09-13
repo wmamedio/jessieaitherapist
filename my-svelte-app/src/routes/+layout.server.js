@@ -39,5 +39,3 @@ export async function load({ fetch }) {
 
     return { allPosts: posts };
 }
-
-// testing
