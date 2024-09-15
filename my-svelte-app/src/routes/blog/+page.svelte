@@ -34,14 +34,14 @@
 
 <svelte:head>
     <meta name="description" content="Explore expert mental health advice, self-care tips, and the latest updates on therapy.">
-    <title>Jessie Therapist Blog - Online Therapy</title>
+    <title>Jessie Online Therapy Blog</title>
 </svelte:head>
 
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-            <p class="mt-2 text-lg leading-8 text-gray-600">Learn more about mental health, therapy, and self-care.</p>
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Online Therapy Insights, Mental Health Tips, and Self-Care Advice</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Discover valuable insights and tips to improve your mental well-being.</p>
         </div>
         {#if displayedPosts.length === 0}
         <p class="mt-16 text-center text-gray-500 text-xl">No posts available.</p>

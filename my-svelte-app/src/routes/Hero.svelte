@@ -1,9 +1,11 @@
 <div class="mx-auto max-w-7xl">
     <div class="relative isolate px-16 pt-14 md:h-screen content-center center">
         <div class="mx-auto py-12 flex flex-col md:flex-row items-center gap-8">
-            <div class="text-left flex-2">
-                <h1 class="font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl" style="line-height: 1.2;">
-                    I'm Jessie! <br/>Your Online Therapist.
+            <div class="text-left flex-2 max-w-4xl">
+                <span class="text-2xl md:text-3xl lg:text-4xl font-semibold text-indigo-600">I'm Jessie,</span>
+                <h1 class="font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl mt-2" style="line-height: 1.2;">
+                    Your Personal AI<br/>
+                    for Online Therapy
                 </h1>
                 <p class="text-lg text-gray-600 mt-4">
                     Whether you're lonely, overwhelmed, or just want to talk,
