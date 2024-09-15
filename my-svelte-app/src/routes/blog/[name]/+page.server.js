@@ -3,19 +3,13 @@ import { get } from 'svelte/store';
 
 export const prerender = true;
 
-export async function load({ params }) {
-    const { name } = params;
+export async function load() {
     const allPosts = get(allPostsStore);
-    // console.log('Using stored posts for specific blog page');
 
-    if (!allPosts || allPosts.length === 0) {
-        throw new Error('No posts available');
-    }
-
-    const post = allPosts.find(post => post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-') === name);
-    if (post) {
-        return { post };
+    if (allPosts && allPosts.length > 0) {
+        return { posts: allPosts.slice(0, 16), totalPosts: allPosts.length };
     } else {
-        throw new Error('Post not found');
+        console.error('No posts available');
+        return { posts: [], totalPosts: 0 };
     }
 }
