@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "vite dev --open",
-    "build": "vite build",
+    "build": "vite build && node src/lib/generateSitemap.js",
     "preview": "npm run build && wrangler pages dev",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "deploy": "npm run build && wrangler pages deploy",
-    "postbuild": "npx svelte-sitemap --out-dir .svelte-kit/cloudflare --domain https://jessietherapist.com --ignore '/404*' && node src/lib/indexNow.js"
+    "postbuild": "node src/lib/indexNow.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -35,6 +35,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
     "xml2js": "^0.6.2"
   }
 }

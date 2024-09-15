@@ -1,6 +1,35 @@
 <script>
-    export let data;
+    import { onMount } from 'svelte';
     import { lazyLoad } from '$lib/lazyLoad.js';
+    export let data;
+
+    let displayedPosts = data.initialPosts;
+    let remainingPosts = data.remainingPosts;
+    let totalPosts = data.totalPosts;
+    let loading = false;
+
+    function loadMorePosts() {
+        if (loading || remainingPosts.length === 0) return;
+
+        loading = true;
+        const nextPosts = remainingPosts.slice(0, 15);
+        displayedPosts = [...displayedPosts, ...nextPosts];
+        remainingPosts = remainingPosts.slice(15);
+        loading = false;
+    }
+
+    onMount(() => {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                loadMorePosts();
+            }
+        }, { rootMargin: '100px' });
+
+        const target = document.querySelector('#load-more-target');
+        if (target) observer.observe(target);
+
+        return () => observer.disconnect();
+    });
 </script>
 
 <svelte:head>
@@ -14,11 +43,11 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">Learn more about mental health, therapy, and self-care.</p>
         </div>
-        {#if data.posts.length === 0}
+        {#if displayedPosts.length === 0}
         <p class="mt-16 text-center text-gray-500 text-xl">No posts available.</p>
         {:else}
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {#each data.posts as post}
+            {#each displayedPosts as post}
             <a href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`} class="group">
                 <article class="flex flex-col items-start h-full">
                     <div class="relative w-full">
@@ -47,6 +76,12 @@
             </a>
             {/each}
         </div>
+        {/if}
+        {#if remainingPosts.length > 0}
+        <div id="load-more-target" class="h-10 mt-8"></div>
+        {/if}
+        {#if loading}
+        <p class="text-center mt-8">Loading more posts...</p>
         {/if}
     </div>
 </div>

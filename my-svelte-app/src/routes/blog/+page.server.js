@@ -5,12 +5,15 @@ export const prerender = true;
 
 export async function load() {
     const allPosts = get(allPostsStore);
-    // console.log('Using stored posts for blog page');
 
     if (allPosts && allPosts.length > 0) {
-        return { posts: allPosts };
+        return { 
+            initialPosts: allPosts.slice(0, 15), 
+            remainingPosts: allPosts.slice(15),
+            totalPosts: allPosts.length 
+        };
     } else {
         console.error('No posts available');
-        return { posts: [] };
+        return { initialPosts: [], remainingPosts: [], totalPosts: 0 };
     }
 }

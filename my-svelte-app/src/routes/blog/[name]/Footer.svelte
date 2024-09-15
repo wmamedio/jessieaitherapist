@@ -1,6 +1,6 @@
 <!-- Footer.svelte -->
 <div class="bg-white">
-    <div class="mx-auto max-w-4xl py-20 sm:px-6 sm:py-24 lg:px-8">
+    <div class="mx-auto max-w-5xl py-20 sm:px-6 sm:py-24 lg:px-8">
         <div class="relative isolate overflow-hidden bg-white px-6 py-16 shadow-2xl sm:rounded-3xl sm:px-16 md:py-12 lg:flex lg:gap-x-20 flex-initial">
             <div class="flex-1 content-center">
                 <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Want to talk about your fears and feelings?</h2>

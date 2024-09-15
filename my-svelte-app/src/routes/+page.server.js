@@ -10,8 +10,7 @@ export const load = async ({ fetch }) => {
         }
         const result = await response.json();
         const filteredPosts = result.response.results.filter(post => post.title_text.toLowerCase().startsWith('online therapy'));
-        const multipleOfThree = Math.floor(filteredPosts.length / 3) * 3; // Get the largest multiple of 3
-        postsData.posts = filteredPosts.slice(0, multipleOfThree); // Slice to ensure a multiple of 3
+        postsData.posts = filteredPosts.slice(0, 15); // Slice to ensure a multiple of 3
     } catch (err) {
         error = err.message;
     }
