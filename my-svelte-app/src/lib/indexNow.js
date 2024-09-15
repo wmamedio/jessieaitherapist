@@ -4,7 +4,7 @@ import xml2js from 'xml2js';
 import https from 'https';
 
 // Configuration
-const sitemapPath = path.resolve('.svelte-kit/cloudflare/sitemap.xml'); // Local sitemap path
+const sitemapPath = path.join(process.cwd(), '.svelte-kit', 'cloudflare', 'sitemap.xml');
 const host = 'jessietherapist.com';
 const key = '571653aa1e234e78a8faffcdb1047449';
 const keyLocation = 'https://jessietherapist.com/571653aa1e234e78a8faffcdb1047449.txt';
@@ -14,8 +14,10 @@ function fetchSitemap() {
     return new Promise((resolve, reject) => {
         fs.readFile(sitemapPath, 'utf8', (err, data) => {
             if (err) {
+                console.error(`Error reading sitemap from ${sitemapPath}: ${err.message}`);
                 reject(err);
             } else {
+                console.log(`Sitemap successfully read from ${sitemapPath}`);
                 resolve(data);
             }
         });
@@ -26,81 +28,75 @@ function parseSitemap(xmlData) {
     return new Promise((resolve, reject) => {
         xml2js.parseString(xmlData, (err, result) => {
             if (err) {
+                console.error(`Error parsing sitemap XML: ${err.message}`);
                 reject(err);
             } else {
+                console.log('Sitemap XML successfully parsed');
                 resolve(result);
             }
         });
     });
 }
 
-function filterUrlsByDate(sitemap) {
-    const urls = sitemap.urlset.url;
-    return urls.map(url => url.loc[0]); // Return all URLs
-}
-
-async function postToIndexNow(urlList) {
-    const data = JSON.stringify({
-        host,
-        key,
-        keyLocation,
-        urlList
-    });
-
-    const options = {
-        hostname: 'api.indexnow.org',
-        port: 443,
-        path: '/IndexNow',
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json; charset=utf-8',
-            'Content-Length': data.length
-        }
-    };
-
+// Function to send URLs to IndexNow
+function sendUrlsToIndexNow(urls) {
     return new Promise((resolve, reject) => {
+        const postData = JSON.stringify({
+            host,
+            key,
+            keyLocation,
+            urlList: urls
+        });
+
+        const options = {
+            hostname: 'api.indexnow.org',
+            port: 443,
+            path: '/indexnow',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Content-Length': postData.length
+            }
+        };
+
         const req = https.request(options, (res) => {
-            let responseData = '';
+            let data = '';
+
             res.on('data', (chunk) => {
-                responseData += chunk;
+                data += chunk;
             });
+
             res.on('end', () => {
-                resolve({
-                    statusCode: res.statusCode,
-                    statusMessage: res.statusMessage,
-                    data: responseData
-                });
+                if (res.statusCode === 200) {
+                    console.log('URLs successfully submitted to IndexNow');
+                    resolve(data);
+                } else {
+                    console.error(`Failed to submit URLs to IndexNow: ${res.statusCode}`);
+                    reject(new Error(`Failed to submit URLs to IndexNow: ${res.statusCode}`));
+                }
             });
         });
 
-        req.on('error', (error) => {
-            reject(error);
+        req.on('error', (e) => {
+            console.error(`Problem with request: ${e.message}`);
+            reject(e);
         });
 
-        req.write(data);
+        req.write(postData);
         req.end();
     });
 }
 
-async function main() {
+// Main function to read, parse, and submit sitemap URLs
+async function indexNow() {
     try {
-        const xmlData = await fetchSitemap(); // Get local sitemap
-        const sitemap = await parseSitemap(xmlData);
-        const allUrls = filterUrlsByDate(sitemap); // Get all URLs
-
-        console.log(allUrls);
-
-        if (allUrls.length > 0) {
-            const response = await postToIndexNow(allUrls);
-            console.log('IndexNow API Response:');
-            console.log('Status:', response.statusCode, response.statusMessage);
-            console.log('Data:', response.data);
-        } else {
-            console.log('No URLs found in the sitemap.');
-        }
+        const sitemapData = await fetchSitemap();
+        const parsedSitemap = await parseSitemap(sitemapData);
+        const urls = parsedSitemap.urlset.url.map((url) => url.loc[0]);
+        await sendUrlsToIndexNow(urls);
     } catch (error) {
-        console.error('An error occurred:', error);
+        console.error('An error occurred during the IndexNow process:', error);
     }
 }
 
-main();
+indexNow();

@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "vite dev --open",
-    "build": "vite build && node src/lib/generateSitemap.js",
     "preview": "npm run build && wrangler pages dev",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "deploy": "npm run build && wrangler pages deploy",
-    "postbuild": "node src/lib/indexNow.js"
+    "prebuild": "node src/lib/generateSitemap.js",
+    "build": "vite build",
+    "postbuild": "node src/lib/moveSitemap.js && node src/lib/indexNow.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
