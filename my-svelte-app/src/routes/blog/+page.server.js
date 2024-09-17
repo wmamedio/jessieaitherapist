@@ -7,13 +7,9 @@ export async function load() {
     const allPosts = get(allPostsStore);
 
     if (allPosts && allPosts.length > 0) {
-        return { 
-            initialPosts: allPosts.slice(0, 15), 
-            remainingPosts: allPosts.slice(15),
-            totalPosts: allPosts.length 
-        };
+        return { posts: allPosts };
     } else {
         console.error('No posts available');
-        return { initialPosts: [], remainingPosts: [], totalPosts: 0 };
+        return { posts: [] };
     }
 }
