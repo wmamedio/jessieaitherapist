@@ -1,6 +1,7 @@
 <script>
     export let data;
     import Footer from './Footer.svelte';
+    import RandomPostSuggestions from '../RandomPostSuggestions.svelte';
 </script>
 
 <svelte:head>
@@ -15,8 +16,8 @@
 
 <div class="p-8 pb-0 mt-16 flex justify-center">
     <div class="w-full max-w-4xl">
+        {#if data.post}
         <article class="prose lg:prose-2xl mx-auto">
-            {#if data.post}
                 <div class="bg-white rounded-lg overflow-hidden post">
                     {#if data.post.image_image}
                         <img class="w-full h-64 lg:h-[32rem] object-cover object-top rounded-2xl" src={"https:" + data.post.image_image} alt={data.post.title_text} />
@@ -26,11 +27,12 @@
                         <div class="prose max-w-none mb-8">{@html data.post.content_text}</div>
                     </div>
                 </div>
-            {:else}
-                <p>Post not found or still loading...</p>
-            {/if}
         </article>
-    </div>
+        <RandomPostSuggestions posts={data.allPosts} currentPostSlug={data.post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')} />
+        {:else}
+            <p>Post not found or still loading...</p>
+        {/if}
+</div>
 </div>
 
 <Footer />

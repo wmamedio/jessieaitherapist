@@ -13,7 +13,7 @@ export async function load({ params }) {
 
     const post = allPosts.find(post => post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-') === name);
     if (post) {
-        return { post };
+        return { post, allPosts };
     } else {
         throw new Error('Post not found');
     }
