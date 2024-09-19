@@ -1,10 +1,10 @@
 import { allPostsStore } from '../lib/stores';
 import { apiUrl } from '../lib/config.js';
 
-export const prerender = true;
-
 let apiCallCount = 0;
 let cachedPosts = null;
+
+export const prerender = true;
 
 async function populateStore(fetch) {
     if (cachedPosts) {
