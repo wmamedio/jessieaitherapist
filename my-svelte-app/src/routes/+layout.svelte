@@ -36,14 +36,19 @@
 <script>
     import "../app.css";
     import { onMount } from 'svelte';
+    import { page } from '$app/stores';
+    import { baseUrl } from '$lib/config';
     
     onMount(() => {
         document.documentElement.style.scrollBehavior = 'smooth';
     });
+
+    $: canonicalUrl = `${baseUrl}${$page.url.pathname.replace(/\/$/, '')}`;
 </script>
 
 <svelte:head>
 <link rel="icon" href="/favicon.ico">
+<link rel="canonical" href={canonicalUrl}>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N106JM0M8"></script>
@@ -54,5 +59,6 @@
     gtag('config', 'G-1N106JM0M8');
 </script>
 </svelte:head>
+
 
 <slot />

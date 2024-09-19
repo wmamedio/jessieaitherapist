@@ -8,7 +8,7 @@ let cachedPosts = null;
 
 async function populateStore(fetch) {
     if (cachedPosts) {
-        console.log('Using cached posts');
+        // console.log('Using cached posts');
         return cachedPosts;
     }
 
