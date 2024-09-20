@@ -1,7 +1,9 @@
 <script>
+    import { slugify } from '$lib/slugify';
     export let loading;
     export let error;
     export let postsData = { posts: [] }; // Ensure default value
+
 </script>
 
 <section id="latest-blog-posts" class="bg-white py-24 sm:py-32">
@@ -21,7 +23,7 @@
             <p class="text-red-600">{error}</p>
             {:else if postsData.posts && postsData.posts.length > 0}
             {#each postsData.posts as post}
-            <a class="text-xl font-semibold mb-2" href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`}>
+            <a class="text-xl font-semibold mb-2" href={`/blog/${slugify(post.title_text)}`}>
                 <div class="group/card">
                     {#if post.image_image}
                     <img loading="lazy" src={post.image_image} alt={post.title_text} class="w-full h-48 object-cover mb-4 rounded-lg shadow-sm shadow-gray-100  group-hover/card:shadow-gray-300">

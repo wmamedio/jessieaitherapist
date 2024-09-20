@@ -1,11 +1,13 @@
 <script>
     import { lazyLoad } from '$lib/lazyLoad.js';
+    import { slugify } from '$lib/slugify';
+
     export let data;
 </script>
 
 <svelte:head>
-    <meta name="description" content="Explore expert mental health advice, self-care tips, and the latest updates on therapy.">
-    <title>Jessie Online Therapy Blog</title>
+<meta name="description" content="Explore expert mental health advice, self-care tips, and the latest updates on therapy.">
+<title>Jessie Online Therapy Blog</title>
 </svelte:head>
 
 <div class="bg-white py-24 sm:py-32">
@@ -19,14 +21,14 @@
         {:else}
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {#each data.posts as post}
-            <a href={`/blog/${post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-')}`} class="group">
+            <a href={`/blog/${slugify(post.title_text)}`} class="group">
                 <article class="flex flex-col items-start h-full">
                     <div class="relative w-full">
                         {#if post.image_image}
                         <img use:lazyLoad 
-                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lazy" 
-                             data-src={"https:" + post.image_image} 
-                             alt={post.title_text} />
+                        class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lazy" 
+                        data-src={"https:" + post.image_image} 
+                        alt={post.title_text} />
                         {/if}
                     </div>
                     <div class="max-w-xl flex-grow">
@@ -36,9 +38,9 @@
                             </h3>
                             <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                                 {#if post.content_text}
-                                    {@html post.content_text.replace(/<[^>]*>/g, '').slice(0, 150)}...
+                                {@html post.content_text.replace(/<[^>]*>/g, '').slice(0, 150)}...
                                 {:else}
-                                    No content available
+                                No content available
                                 {/if}
                             </p>
                         </div>

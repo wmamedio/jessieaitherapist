@@ -1,20 +1,16 @@
-import { allPostsStore } from '$lib/stores';
 import { get } from 'svelte/store';
-
-export const prerender = true;
+import { allPostsStore } from '$lib/stores';
+import { slugify } from '$lib/slugify';
 
 export async function load({ params }) {
-    const { name } = params;
     const allPosts = get(allPostsStore);
+    const post = allPosts.find(p => slugify(p.title_text) === params.name);
 
-    if (!allPosts || allPosts.length === 0) {
-        throw new Error('No posts available');
-    }
-
-    const post = allPosts.find(post => post.title_text.toLowerCase().replace(/:/g, '').replace(/\s+/g, '-') === name);
     if (post) {
         return { post, allPosts };
-    } else {
-        throw new Error('Post not found');
     }
+
+    // Instead of throwing an error, return null for the post
+    console.warn(`Post not found: ${params.name}`);
+    return { post: null, allPosts };
 }

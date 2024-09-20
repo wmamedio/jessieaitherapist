@@ -1,15 +1,21 @@
 <script context="module">
     import { apiUrl } from '../lib/config.js';
+    import { slugify } from '$lib/slugify';
 
     export async function load({ fetch }) {
         
         let cursor = 0;
         let hasMore = true;
         let posts = [];
-        
+
+        posts = posts.map(post => ({
+            ...post,
+            slug: slugify(post.title_text)
+        }));        
+
         try {
             while (hasMore) {
-                const response = await fetch(`${apiUrl}?limit=100&cursor=${cursor}`);
+                const response = await fetch(`${apiUrl}&limit=100&cursor=${cursor}`);
                 const data = await response.json();
                 
                 if (data.response.results.length > 0) {
